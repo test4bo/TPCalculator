@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edit_coupon2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:inputType="number"
+        android:text="@string/editCoupon2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCoupon_1" />
+
+    <TextView
+        android:id="@+id/coupon_2"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/coupon_2"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_coupon2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editCoupon_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:inputType="number"
+        android:text="@string/editCoupon"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPriceBeforediscount" />
+
+    <EditText
+        android:id="@+id/editPriceBeforediscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSheetsPerRoll" />
+
+    <EditText
+        android:id="@+id/editSheetsPerRoll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberOfRolls" />
+
+    <TextView
+        android:id="@+id/number_of_rolls"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/number_of_rolls"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editNumberOfRolls"
+        app:layout_constraintEnd_toStartOf="@+id/editNumberOfRolls"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editNumberOfRolls"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editSheetsPerRoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/sheets_per_roll"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/sheets_per_roll"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editSheetsPerRoll"
+        app:layout_constraintEnd_toStartOf="@+id/price_before_discount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price_before_discount"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/price_before_discount"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editPriceBeforediscount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/coupon_1"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/coupon_1"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editCoupon_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/total_price"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amountTotal"
+        app:layout_constraintEnd_toStartOf="@+id/amountTotal"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/amountTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/amount_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/edit_coupon2" />
+
+    <TextView
+        android:id="@+id/pricePerSheet"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/price_per_sheet"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amountSheet"
+        app:layout_constraintEnd_toStartOf="@+id/amountSheet"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/amountSheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/amount_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pricePerSheet"
+        app:layout_constraintTop_toBottomOf="@+id/amountTotal" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:background="#00897B"
+        android:onClick="calculateTP"
+        android:text="@string/calculateButton"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountSheet" />
+
+</android.support.constraint.ConstraintLayout>

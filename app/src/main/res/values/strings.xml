@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TP Calculator</string>
+    <string name="number_of_rolls">Number of rolls</string>
+    <string name="sheets_per_roll">Sheets Per roll</string>
+    <string name="price_before_discount">Price before discounts</string>
+    <string name="coupon_1">Coupon/Discount 1 (%)</string>
+    <string name="coupon_2">Coupon/Discount 2 ($)</string>
+    <string name="total_price">Total Price</string>
+    <string name="amount_total">$</string>
+    <string name="price_per_sheet">Price per sheet</string>
+    <string name="amount_sheet">Cents</string>
+    <string name="calculateButton">Calclate</string>
+    <string name="editCoupon">0</string>
+    <string name="editCoupon2">0</string>
+</resources>
