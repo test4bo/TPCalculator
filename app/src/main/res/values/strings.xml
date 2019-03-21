@@ -12,4 +12,7 @@
     <string name="calculateButton">Calclate</string>
     <string name="editCoupon">0</string>
     <string name="editCoupon2">0</string>
+    <string name="errorMessage">Fill some number and tap Calculate</string>
+    <string name="resetButton">Reset</string>
+    />
 </resources>
